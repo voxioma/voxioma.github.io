@@ -26,7 +26,8 @@
         display: flex;
     }
     .centered-inner {
-        width: 500px;
+        max-width: 500px;
+        width: 100%;
         display: flex;
          gap: 10px;
         flex-direction: column;
@@ -148,6 +149,9 @@
 </div>
 
 <style>
+    * {
+        box-sizing: border-box;
+    }
     .centered {
         color: white;
         font-family: 'Josefin Sans', sans-serif;
@@ -158,6 +162,8 @@
     flex-direction: column;
     place-items: center;
     justify-content: center;
+    padding: 20px;
+
     }
     .centered h1 {
         font-weight: 300;
