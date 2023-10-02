@@ -81,7 +81,7 @@
 
         <input type="text" class="input-box" placeholder="john.smith@gmail.com" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
 
-        <div class="d-flex g-10">
+        <div class="d-flex g-10 cta-btns">
         
             <div class="dialog-button button-lime">
                 Add to mailing list
@@ -175,6 +175,13 @@
         font-weight: 300;
         font-size: 20px;
         margin: 15px;
+    }
+
+    @media (max-width:801px)  { 
+        
+        .cta-btns {
+            flex-direction: column;
+        }
     }
 </style>
 
