@@ -78,7 +78,7 @@
         </div>
        <input type="text" class="input-box" autofocus autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
 
-        <div class="d-flex g-10">
+        <div class="d-flex g-10 cta-btns">
         
             <div class="dialog-button button-lime">
                 Add to mailing list
@@ -173,6 +173,18 @@
         font-size: 20px;
         margin: 15px;
     }
+
+    @media (max-width:801px)  { 
+        
+        .cta-btns {
+            flex-direction: column;
+        }
+
+        .dialog-button {
+            width: 100%;
+        }
+    }
+    
 </style>
 
 <script>
