@@ -1,0 +1,195 @@
+<script src="three.r134.min.js"></script>
+<script src="vanta.dots.min.js"></script>
+<script src="vanta.halo.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
+<style>
+    html, body {
+        width: 100%;
+        height: 100px;
+        padding: 0px;
+        margin: 0px;
+        background: #2d2d2d;
+    }
+    #background-effect {
+        width: 100vw;
+        height: 100vh;
+    }
+    #background-effect > canvas {
+        opacity: 0.7;
+    }
+    .d-flex {
+        display: flex;
+    }
+    .centered-inner {
+        width: 500px;
+        display: flex;
+         gap: 10px;
+        flex-direction: column;
+    }
+    .g-10 {
+        gap: 10px;
+    }
+    .ta-center {
+        text-align: center;
+    }
+    .description-text {
+        font-family: 'Inter Tight', sans-serif;
+    }
+    .size-small {
+        font-size:17px;
+    }
+    .w-100 {
+        width: 100%;
+    }
+
+    .jc-sb {
+        justify-content: space-between;
+    }
+</style>
+
+<div id="background-effect">
+    <div class="centered">
+        <div class="centered-inner">
+
+        <div class="dialog-box">
+            <div class="d-flex w-100 jc-sb">
+                <h1 class="col-white size-small">
+                    <span style="opacity:0;color:Transparent;">Coming soon</span>
+                </h1>
+
+                <h2>Voxioma</h2>
+
+                <h1 class="col-white size-small">
+                    <span>Coming soon</span>
+                </h1>
+
+            </div>
+
+        </div>
+        <div class="dialog-box description-text">
+            <p>Voxioma supplies ground-breaking AI voice interaction technology to consumers and businesses.</p>
+            <p></p>
+        </div>
+        <input type="text" class="input-box" autofocus>
+
+
+        <div class="d-flex g-10">
+        
+            <div class="dialog-button button-lime">
+                Add to mailing list
+            </div>
+            <div class="dialog-button">
+                Contact
+            </div>
+        </div>
+
+        <style>
+            .col-white {
+                color: white;
+            }
+            .dialog-box {
+                backdrop-filter: blur(20px);
+                background: #ffffff0f;
+                border: 1px solid rgba(255, 255, 255, 0.533);
+                color: rgb(212, 212, 212);
+
+            }
+            .dialog-button {
+                backdrop-filter: blur(20px);
+                border: 1px solid rgba(255, 255, 255, 0.533);
+                width: 50%;
+                text-align: center;
+                padding: 10px;
+                font-size: 18px;
+                text-transform: uppercase;
+                font-family: 'Inter Tight', sans-serif;
+                background: #ffffff0f;
+                cursor: pointer;
+                transition-duration: 0.1s;
+                transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+                color: rgb(212, 212, 212);
+            }
+            .dialog-button:hover {
+                border-color: white;
+                color: rgb(233 233 233);
+            }
+            .button-lime {
+                color: rgb(212, 212, 212);
+                border-color: green;
+                background: #02520224;
+                transition-duration: 0.1s;
+                transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+            }
+            .button-lime:hover {
+                border-color: #0aa00a;
+                color: rgb(233 233 233);
+            }
+            .input-box {
+                backdrop-filter: blur(20px);
+                background: #ffffff0f;
+                border: 1px solid rgba(255, 255, 255, 0.533);
+                font-size: 17px;
+                padding: 15px;
+                color: white;
+                outline: none;
+                font-family: 'Inter Tight', sans-serif;
+
+            }
+        </style>
+        </div>
+    </div>
+</div>
+
+<style>
+    .centered {
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    }
+    .centered h1 {
+        font-weight: 300;
+        margin: 15px;
+        display: flex;
+        place-items: center;
+    }
+    .centered p {
+        font-weight: 300;
+        font-size: 20px;
+        margin: 15px;
+    }
+</style>
+
+<script>
+    VANTA.HALO({
+        el: "#background-effect",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00
+    }) 
+    /*
+    VANTA.HALO({
+        el: "#background-effect",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00
+    })*/
+</script>
+
+
